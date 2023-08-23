@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-default.navbar-fixed-top.gg
+      .container
+        ul
+          li#logo
+            a(href='/') 
+              img(src='/images/aulogo.png')#aulogo 
+          li
+            a(href='/syllabus/') Syllabus 
+          li
+            a(href='/wpmlab/') WPM LAB
+          li
+            a(href='/prevques/') Prev Question Papers
+          li
+            a(href='/notes/') Notes 
+
+    .container
+      block content
+    .container
+      footer
+        .row
+          .col-xs-12
+            small &copy; Tanish Vardhineni 2023
+
+script(src='javascripts/main.js') 
