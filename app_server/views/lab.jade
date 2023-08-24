@@ -1,0 +1,318 @@
+doctype html
+html
+  head
+    title FAQ
+    style.
+      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #aulogo{
+
+        width: 120px;
+        height: 33px;
+      }
+      #logo{
+        margin-right: 45rem;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #34495e;
+        color: #fff;
+      }
+      .jkjkj {
+       
+        text-align: center;
+        margin: 1.5rem 0;
+        font-size: 2.5rem;
+        padding-bottom: 30px;
+
+      }
+
+      .accordion {
+        width: 90%;
+        max-width: 1000px;
+        margin: 2rem auto;
+      }
+      .accordion-item {
+        opacity: 70%;
+        background-color: #fff;
+        color: #111;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+      }
+    
+      .accordion-item-header {
+        padding: 0.5rem 3rem 0.5rem 1rem;
+        min-height: 3.5rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+      }
+      .accordion-item-header::after {
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        
+      }
+      .accordion-item-header.active::after {
+        
+        content: "\2212";
+      }
+      .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .accordion-item-body-content {
+        
+        padding: 1rem;
+        line-height: 1.5rem;
+        border-top: 1px solid;
+        border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+      }
+
+      @media(max-width:767px) {
+        html {
+          font-size: 14px;
+        }
+      }
+      body {
+      -webkit-animation: theme 21s linear infinite;
+          animation: theme 21s linear infinite;
+        }
+      body:after, body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0, 0, 0, 0.05);
+        -webkit-animation: background 90s linear infinite;
+                animation: background 90s linear infinite;
+      }
+      body:after {
+        left: 15vw;
+      }
+      body:before {
+        right: 15vw;
+        -webkit-animation-delay: -30s;
+                animation-delay: -30s;
+        animation-direction: reverse;
+      }
+
+      @-webkit-keyframes theme {
+        0% {
+          background: #4e54c8;
+        }
+       
+        50% {
+          background: #4e54c8;
+        }
+
+        100% {
+          background: #4e54c8;
+        }
+      }
+
+      @keyframes theme {
+        0% {
+          background: #4e54c8;
+        }
+       
+        50% {
+          background: #4e54c8;
+        }
+
+        100% {
+          background: #4e54c8;
+        }
+      }
+      @-webkit-keyframes background {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes background {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      a {
+        text-decoration:none;
+        color: blue;
+ 
+      }
+
+      nav {
+        padding: 20px;
+        padding-left: 0%;
+        width: 100%;
+        color: #fff;
+        justify-content: space-between;
+        display: flex;
+
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        margin: 0 15px;
+        font-size: 1.1rem;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      nav.navbar {
+        z-index: 1;
+      }
+      nav a:hover {
+        font-weight: bold;
+      }
+
+  body
+    nav.navbar.navbar-default.navbar-fixed-top.gg
+      .container
+        ul
+          li#logo
+            a(href='/') 
+              img(src='/images/aulogo.png')#aulogo 
+          li
+            a(href='/syllabus/') Syllabus 
+          li
+            a(href='/wpmlab/') WPM LAB
+          li
+            a(href='/prevques/') Prev Question Papers
+          li
+            a(href='/notes/') Notes 
+    h1.jkjkj Web Programming with MEAN Lab
+
+    .accordion
+      .accordion-item
+        .accordion-item-header Prerequisites
+        .accordion-item-body
+          .accordion-item-body-content
+            ul(style="padding-left: 1rem;")
+              li NODE.JS :
+                a(href = 'https://nodejs.org/en/download') https://nodejs.org/en/download  
+                p (INSTALL LTS VERSION 18.17.0)
+              li MongoDB : 
+                a(href = 'https://drive.google.com/file/d/1UtD1LKNCg8_r9AcIQAXczA0QXtbmDZ4S/view') Installation
+              li Steps to Install Express : 
+                a(href='https://expressjs.com/en/starter/installing.html') https://expressjs.com/en/starter/installing.html
+              li Angular JS : 
+                a(href='https://angularjs.org') https://angularjs.org
+              
+
+      .accordion-item
+        .accordion-item-header Week 1 : Identification of the problem.
+        .accordion-item-body
+          .accordion-item-body-content
+            | HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+
+      .accordion-item
+        .accordion-item-header Week 2 : Requirement specification and Architecture design.
+        .accordion-item-body
+          .accordion-item-body-content
+            ul(style="padding-left: 1rem;")
+              li Create Express page
+              li 
+                a(href='https://drive.google.com/file/d/1MV25NXSfrQ6AnYfhcwgu4zo_WHf0QO9w/view?usp=drive_link') Modifying the MVC Architecture
+              li 
+                a(href='https://drive.google.com/file/d/1zbo1lRmXXwnF1ps6H6scKQASonstsESi/view?usp=sharing') Setting up Heroku and deploying it to live enviroment using git
+              li 
+                a(href='https://drive.google.com/file/d/1Tpd4oEB_5vG4IPgN-t2g6yYLY2SQr6-B/view?usp=sharing') <p> Building a Static Site -Controllers & Routes
+              li 
+                a(href='https://drive.google.com/file/d/13jYtLEubxchk-QrDDwfvV1sFDYj_962Z/view?usp=drive_link') Building the static site:complete pages
+              li 
+                a(href = 'https://drive.google.com/file/d/1LmNmbqey3lRuRVA0flNM9av1JsCATIZg/view?usp=sharing') Moving the data from views to controller
+              li Deploying the Data Live using Cyclic
+                p 
+                  a(href='https://drive.google.com/file/d/16KEZveA_36-ahSfvR6Oqs8JRW-U4DX0a/view?usp=sharing') Pushing the Data into GitHub
+                p 
+                  a(href='https://drive.google.com/file/d/1o61xs-IOiSG4A5Xrcz_-81PyeQ2omwg4/view?usp=sharing') Deploying the data Live
+             
+
+      .accordion-item
+        .accordion-item-header <b>Week 3, 4 & 5 : Development of the front end.
+        .accordion-item-body
+          .accordion-item-body-content
+            | HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+
+      .accordion-item
+        .accordion-item-header <p>Week 6, 7 & 8 : Development of backend 
+        .accordion-item-body
+          .accordion-item-body-content
+            ul(style="padding-left: 1rem;")
+              li 
+                a(href = 'https://drive.google.com/file/d/1UtD1LKNCg8_r9AcIQAXczA0QXtbmDZ4S/view?usp=sharing') MongoDB Installation  
+              li 
+                a(href = 'https://drive.google.com/file/d/15AckVuxnPMnG5rRHtkZNqnoSCj9xKoZN/view?usp=sharing') Building a data model with MongoDB and Mongoose 
+              li 
+                a(href='https://drive.google.com/file/d/1tTc_99lHzZFW0CtADquqKeCqvh30Fjzc/view?usp=sharing') Sending the data to Mongodb
+
+      .accordion-item
+        .accordion-item-header <b>Week 9, 10 & 11 : Creation of Database,
+        .accordion-item-body
+          .accordion-item-body-content
+            | CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+      .accordion-item
+        .accordion-item-header <b>Week 12 : Integration and Testing.
+        .accordion-item-body
+          .accordion-item-body-content
+            | CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+      .accordion-item
+        .accordion-item-header <b>Week 13 : Presentation
+        .accordion-item-body
+          .accordion-item-body-content
+            | CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+  
+    script.
+      const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+      accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+          
+          // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+          
+          // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+          // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+          //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+          //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          // }
+
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if(accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          }
+          else {
+            accordionItemBody.style.maxHeight = 0;
+          }
+          
+          });
+        });
